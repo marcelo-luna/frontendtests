@@ -1,0 +1,17 @@
+.campo-desabilitado{
+	background-color: lightgray;
+}
+
+i{
+	vertical-align: middle;
+}
+
+.borda-vermelha{
+	border-color: red;
+	border-width: 1.5px;
+}
+
+.borda-verde{
+	border-color: green;
+	border-width: 1.5px;
+}

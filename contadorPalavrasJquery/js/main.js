@@ -52,6 +52,7 @@ campo.one("focus",function(){
 			$("#btn-reiniciar").attr("disabled",false);
 			clearInterval(cronometroID);
 			campo.toggleClass("campo-desabilitado");
+			inserirPlacar();
 		}
 	},1000)
 });
@@ -64,7 +65,6 @@ function limpar(){
 	spancaracteres.text("0");
 	campo.val("");
 	campo.attr("disabled",false);
-	
 }
 
 $("#btn-reiniciar").click(function(){

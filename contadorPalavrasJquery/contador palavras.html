@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/selectize.default.css">
+	<link rel="stylesheet" href="css/tooltipster.bundle.min.css">
 </head>
 <body>
 	<div class="container">
@@ -12,12 +14,33 @@
 		<p class="center" id="principal">Testando contador projeto jquery</p>
 		<ul class="center">
 			<li>
+				<i class="small material-icons">content_paste</i>
+				<span id="palavras">3</span>
+			</li>
+			<li>
 				<i class="small material-icons">query_builder</i>
 				<span id="tempo">3</span>
 			</li>
 		</ul>
+		<div class="center">
+			<img src="img/spinner.gif" alt="Spinner" id="spinner"> 
+			<p id="erro" visible=>Erro ao tentar conectar com o servidor</p>
+		</div>
 		<textarea id="texto"></textarea>
 		<a id="btn-reiniciar" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">restore</i></a>
+		<a id="btn-placar" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">assignment</i></a>
+		<a id="btn-frase" class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">shuffle</i></a>
+		<a id="botao-frase-id" class="btn-floating btn-large waves-effect waves-light cyan">
+			<i class="material-icons">repeat_one</i>
+		</a>
+		<input type="number" min="0" id="txt-frase-id">
+		<div class="select-usuarios">
+			<select id=usuarios>
+				<option>Marcelo</option>
+				<option>Teste</option>
+			</select>
+		</div>
+		<a id="btn-async" class="btn-floating btn-large waves-effect waves-light purple tooltip" title="Sincronizado"><i class="material-icons">swap_vert</i></a>
 		<ul class="center">
 			<li>
 				<i class="small material-icons">description</i>
@@ -30,23 +53,26 @@
 		</ul>
 	</container>
 	<section class="placar">
-	<h3 class="center">Placar</h3>
-	<table class="centered bordered">
-		<thead>
-			<tr>
-				<th>USUÁRIO</th>
-				<th>Nº PALAVRAS</th>
-				<th>REMOVER</th>
-			</tr>
-		</thead>
-		<tbody>
-		</tbody>
-	</table>
-</section>
+		<h3 class="center">Placar</h3>
+		<table class="centered bordered">
+			<thead>
+				<tr>
+					<th>USUÁRIO</th>
+					<th>Nº PALAVRAS</th>
+					<th>REMOVER</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</section>
 </div>
 
 </body>
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
 <script src="js/placar.js"></script>
+<script src="js/frase.js"></script>
+<script src="js/selectize.js"></script>
+<script src="js/tooltipster.bundle.min.js"></script>
 </html>

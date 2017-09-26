@@ -1,9 +1,13 @@
-.campo-desabilitado{
-	background-color: lightgray;
-}
-
 i{
 	vertical-align: middle;
+}
+
+body{
+	overflow: scroll;
+}
+
+.campo-desabilitado{
+	background-color: lightgray;
 }
 
 .borda-vermelha{
@@ -14,4 +18,38 @@ i{
 .borda-verde{
 	border-color: green;
 	border-width: 1.5px;
+}
+
+.placar{
+	display: none;
+}
+
+#erro{
+	color: red;
+	display: none;
+}
+
+#spinner{
+	display: none;
+}
+
+#txt-frase-id{
+	width: 40px;
+}
+
+#btn-async{
+	float: right;
+}
+
+.select-usuarios{
+	display: inline-block;
+}
+
+#usuarios{
+	display: block;
+}
+
+.selectize-control.single .selectize-input, .selectize-dropdown.single{
+	width: 150px;
+	vertical-align: middle;
 }
